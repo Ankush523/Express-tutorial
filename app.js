@@ -13,10 +13,10 @@ app.get('/api/products',(req,res) => {
     res.json(newProducts)
 })
 
-// app.get('/api/products/1',(req,res) => {
-//     const singleProduct = products.find((product) => product.id===1)
-//     res.json(singleProduct)
-// })
+app.get('/api/products/1',(req,res) => {
+    const singleProduct = products.find((product) => product.id===1)
+    res.json(singleProduct)
+})
 
 app.listen(3080,() => {
     console.log("Server listening to port 3080...")
